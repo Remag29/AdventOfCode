@@ -2,11 +2,15 @@
 ---
 
 This repository condenses **all** my solutions of the [AdventOfCode](https://adventofcode.com).  
-I’m just a **beginner**, so I didn’t expect to see the best solution here.  
+I’m just a **beginner**, so did not expect to see the best solution here.
 
-| Years | States       |
-| ----- | ------------ |
-| 2023  | `Not Started`|
+I use different languages by years to solve the problems, so I can learn more about them or to improve my skills.
+
+|         Years          |              States               |  Language  |
+|:----------------------:|:---------------------------------:|:----------:|
+| [2023](2023/README.md) | `_________________________ 00/25` |   Python   |
+| [2022](2022/README.md) | `████████████▄____________ 12/25` | PowerShell |
+| [2021](2021/README.md) | `███______________________ 03/25` | PowerSHell |
 
 ```
       .               .                                .   .                .     .  .      +     .      .          .  
