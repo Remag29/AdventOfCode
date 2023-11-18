@@ -13,6 +13,8 @@
      '='      '='      '='      '='      '='      '='
 ```
 
+Progression : _________________________ 00/25
+
 ## Table of Contents
 
 | Day | Part 1 rank | Part 2 rank |
