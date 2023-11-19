@@ -111,6 +111,26 @@ def update_md(year, progression_bar, md_table):
         f.close()
 
 
+def update_main_readme(year, progression_bar):
+    md_path = f'README.md'
+    with open(md_path, 'r', encoding='utf-8') as f:
+        lines = f.readlines()
+        f.close()
+
+    progression_bar = progression_bar.replace('Progression : ', '')
+
+    # Update the progression
+    for i, line in enumerate(lines):
+        if line.startswith(f'| [{year}]({year}/README.md) |'):
+            language = line.split('|')[3].strip()
+            lines[i] = f'| [{year}]({year}/README.md) | `{progression_bar}` | {language} |\n'
+
+    # Write the new README.md
+    with open(md_path, 'w', encoding='utf-8') as f:
+        f.writelines(lines)
+        f.close()
+
+
 if __name__ == '__main__':
     # get environment variables from .env file
     import os
@@ -147,3 +167,4 @@ if __name__ == '__main__':
 
         # Update the README.md
         update_md(year, progression_bar, md_table)
+        update_main_readme(year, progression_bar)
