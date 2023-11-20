@@ -150,6 +150,7 @@ if __name__ == '__main__':
     for folder in folders:
         # Get the folder name
         year = folder.name
+        print("")
         print(f'Updating {year}...')
 
         # Get the personal leaderboard
