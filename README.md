@@ -11,7 +11,7 @@ I use different languages by years to solve the problems, so I can learn more ab
 | [2023](2023/README.md) | `_________________________ 0/25` | Python |
 | [2022](2022/README.md) | `███████████▄_____________ 12/25` | PowerShell |
 | [2021](2021/README.md) | `██▄______________________ 3/25` | PowerSHell |
-| [2020](2020/README.md) | `███______________________ 3/25` | Python |
+| [2020](2020/README.md) | `████_____________________ 4/25` | Python |
 
 ```
       .               .                                .   .                .     .  .      +     .      .          .  
