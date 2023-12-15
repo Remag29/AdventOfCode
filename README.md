@@ -8,7 +8,7 @@ I use different languages by years to solve the problems, so I can learn more ab
 
 |         Years          |              States               |  Language  |
 |:----------------------:|:---------------------------------:|:----------:|
-| [2023](2023/README.md) | `██████████████___________ 14/25` | Python |
+| [2023](2023/README.md) | `███████████████__________ 15/25` | Python |
 | [2022](2022/README.md) | `███████████▄_____________ 12/25` | PowerShell |
 | [2021](2021/README.md) | `██▄______________________ 3/25` | PowerSHell |
 | [2020](2020/README.md) | `██████___________________ 6/25` | Python |
