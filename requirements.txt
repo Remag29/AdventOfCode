@@ -1,4 +1,6 @@
-requests
-python-dotenv
+beautifulsoup4
+numpy
 pandas
-BeautifulSoup4
+python-dotenv
+Requests
+tabulate
