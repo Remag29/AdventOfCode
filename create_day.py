@@ -1,20 +1,30 @@
 import os
+import sys
+from datetime import datetime
 
 if __name__ == '__main__':
 
-    # Request the years and the day to the user
-    year = int(input('Enter the year: '))
-    day = int(input('Enter the day: '))
+    # Try the current day
+    date = datetime.now().strftime("%Y/%d")
+    user_choice = input(f'Create files for the {date} ? (y/n)\n')
+
+    if user_choice not in ['y', 'Y']:
+        # Request the years and the day to the user
+        year = int(input('Enter the year: '))
+        day = int(input('Enter the day: '))
+    else:
+        year = int(date.split('/')[0])
+        day = int(date.split('/')[1])
 
     # Ensure the year is valid
     if len(str(year)) != 4:
         print('Invalid year')
-        exit()
+        sys.exit()
 
     # Ensure the day is valid
     if day < 1 or day > 25:
         print('Invalid day')
-        exit()
+        sys.exit()
     else:
         day = f'{day:02d}'
 
@@ -27,16 +37,16 @@ if __name__ == '__main__':
         os.makedirs(folder_path)
     else:
         print('The folder already exists')
-        exit()
+        sys.exit()
 
     # Create the files
     with open(f'{folder_path}/input.txt', 'w') as f:
-        f.close()
+        pass
 
     with open(f'{folder_path}/part1.py', 'w') as f:
-        f.close()
+        pass
 
     with open(f'{folder_path}/part2.py', 'w') as f:
-        f.close()
+        pass
 
     print(f'Day {day} of {year} created successfully')
