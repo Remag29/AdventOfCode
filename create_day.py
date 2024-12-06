@@ -39,14 +39,28 @@ if __name__ == '__main__':
         print('The folder already exists')
         sys.exit()
 
-    # Create the files
+    # Content for part1.py and part2.py
+    template_content = """def load_data():
+    # load input.txt file
+    with open('input.txt', 'r') as f:
+        lines = f.readlines()
+    f.close()
+    return lines
+
+
+if __name__ == '__main__':
+    print("Starting resolution...")
+
+    lines = load_data()
+    """
+
     with open(f'{folder_path}/input.txt', 'w') as f:
-        pass
+        f.write(template_content)
 
     with open(f'{folder_path}/part1.py', 'w') as f:
-        pass
+        f.write(template_content)
 
     with open(f'{folder_path}/part2.py', 'w') as f:
-        pass
+        f.write(template_content)
 
     print(f'Day {day} of {year} created successfully')
