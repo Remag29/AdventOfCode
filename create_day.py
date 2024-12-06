@@ -55,7 +55,7 @@ if __name__ == '__main__':
     """
 
     with open(f'{folder_path}/input.txt', 'w') as f:
-        f.write(template_content)
+        pass
 
     with open(f'{folder_path}/part1.py', 'w') as f:
         f.write(template_content)
